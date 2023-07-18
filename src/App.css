@@ -3,6 +3,8 @@
   --main-color1: #0A121F ;
   --main-color2: #08101D ;
   --btn-color: #3A68B8 ;
+  --applySec-color: #020A18;
+  --mukafatlar-color:#111926;
 }
 /* Navbar css color end */
 body{
@@ -11,10 +13,48 @@ body{
 .navbar{
   background-color: var(--main-color1);
 }
+nav{
+  position: sticky !important;
+  top: 0px;
+  
+}
 
 .navbar-toggler{
   color: #fff;
 }
+
+.wrapper{
+  padding: 8px 40px ;
+}
+
+@media(max-width:550px){
+  .wrapper {
+    padding: 8px 8px;
+  }
+  .introduction {
+    padding-left: 22px !important;
+    padding-right: 22px;
+    padding-top: 25px !important;
+}
+    .navbar-brand img{
+      width: 200px;
+      margin:0 auto;
+    }
+    .introduction-left-side .intro-h2 {
+     
+     
+      font-size: 25px !important;
+      width: 604px;
+  }
+ 
+}
+@media(max-width:768px){
+  .introduction {
+    padding-right: 10px;
+    padding-top: 50px !important;
+}
+}
+
 .btn{
   background-color: var(--btn-color);
 }
@@ -22,10 +62,11 @@ body{
   background-color: var(--main-color2);
   padding-left: 60px;
   padding-right: 30px;
-  padding-top: 80px;
+  padding-top: 10px;
 }
 .intro-right-foto{
  width: 100%;
+ z-index: 999;
 }
 .btn-groups{
   padding-bottom: 40px;
@@ -40,9 +81,9 @@ body{
     padding-right: 370px !important;
   }
 } */
-.introduction-left-side{
-  padding-top: 10px;
-}
+/* .introduction-left-side{
+  padding-top: 60px;
+} */
 .introduction-left-side h6 {
   text-transform: uppercase;
   font-size:16px;
@@ -53,7 +94,7 @@ body{
 .introduction-left-side .intro-h2{
   color: #fff;
   font-weight: 800;
-  font-size: 55px;
+  font-size: 49px;
   width: 604px;
 }
 .introduction-left-side p{
@@ -110,11 +151,63 @@ body{
 .navbar-open{
   width: 100%;
 }
-.navbar-exit{
-  width: 0;
-}
 
 .partnyorshirketler{
   padding: 40px 60px;
   background-color: var(--main-color2);
 }
+.row{
+  --bs-gutter-x: 0rem;
+}
+.swiper-slide img{
+  width: 80%;
+}
+
+/* APPLY Section Start */
+
+.apply-section{
+  background-color: var(--applySec-color);
+  padding: 50px 90px;
+}
+.apply-right-side{
+display: grid;
+ justify-content: center;
+}
+.apply-left-side img{
+  width: 100%;
+}
+@media(max-width:768px){
+  .apply-left-side img{
+    margin-bottom: 50px;
+  }
+  .apply-section {
+    background-color: var(--applySec-color);
+    padding: 50px 30px;
+}
+
+}
+
+/* APPLY Section END */
+
+/* mukafatlar START */
+
+.card-img-top{
+  display: block;
+  margin: 0 auto;
+  width: 73px;
+  height: 69px;
+}
+
+.mukafat-karti{
+  background-color: var(--mukafatlar-color);
+  padding: 5px;
+  margin-bottom:20px;
+}
+.mukafat-section{
+  background-color: var(--applySec-color);
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 50px 30px;
+}
+/* mukafatlar END */

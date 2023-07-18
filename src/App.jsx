@@ -7,6 +7,9 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Introduction from './components/Introduction'
 import PartnyorCompanies from './components/PartnyorCompanies'
+import ApplySection from './components/ApplySection'
+import Mukafatlar from './components/Mukafatlar'
+
 
 
 function App() {
@@ -18,6 +21,8 @@ function App() {
       <Navbar />
       <Introduction />
       <PartnyorCompanies/>
+      <ApplySection />
+      <Mukafatlar/>
     </>
   )
 }

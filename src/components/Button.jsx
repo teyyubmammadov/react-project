@@ -4,7 +4,7 @@ import playIsharesi from '../assets/image/play.svg'
 
 const Button = ({klassAdi, playIsharesi, icindekiYazi}) => {
   return (
-    <button className={klassAdi}> <img className='playimg' src={playIsharesi} /> {icindekiYazi} </button>
+    <button className={klassAdi}> {playIsharesi && <img className='playimg' src={playIsharesi} />} {icindekiYazi} </button>
   )
 }
 

@@ -1,14 +1,22 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Button from './Button'
 import play from '../assets/image/play.svg'
 import rightfoto from '../assets/image/rightfoto.svg'
 import Typed from 'react-typed';
+import AOS from "aos"
 
 const Introduction = () => {
-  return (
-    <div className='introduction row'>
 
-        <div className="introduction-left-side col-12 col-md-6">
+  useEffect(() => {
+    AOS.init({
+      duration : 3000
+    });
+  }, []);
+
+  return (
+    <div className='introduction row align-items-center'>
+
+        <div className="introduction-left-side col-12 col-md-6" data-aos="fade-right" >
           <h6>Next genaretion platform</h6>
           <Typed className='text-white intro-h2'
                 strings={[

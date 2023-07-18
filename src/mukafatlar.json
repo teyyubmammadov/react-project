@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "mukafatin_adi": "Naxly as the Winners in Global Agency Awards",
+        "mukafatin_metni": "Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups.",
+        "mukafatin_shekili": "https://res.cloudinary.com/dlioaagoi/image/upload/v1689712313/mukafat1_u6gv0l.svg"
+    },
+    {
+        "id": 2,
+        "mukafatin_adi": "Expert Prespective Agency Awards",
+        "mukafatin_metni": "Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups.",
+        "mukafatin_shekili": "https://res.cloudinary.com/dlioaagoi/image/upload/v1689712313/mukafat2_wtxvab.svg"
+    },
+    {
+        "id": 3,
+        "mukafatin_adi": "Business Prespective Global Agency Awards",
+        "mukafatin_metni": "Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups.",
+        "mukafatin_shekili": "https://res.cloudinary.com/dlioaagoi/image/upload/v1689712691/mukafat3_r4jvzt.svg"
+    },
+    {
+        "id": 4,
+        "mukafatin_adi": "Value for Results in Global Agency Awards",
+        "mukafatin_metni": "Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups.",
+        "mukafatin_shekili": "https://res.cloudinary.com/dlioaagoi/image/upload/v1689712691/mukafat4_muc3de.svg"
+    },
+    {
+        "id": 5,
+        "mukafatin_adi": "Global Experience in Agency Awards",
+        "mukafatin_metni": "Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual mockups.",
+        "mukafatin_shekili": "https://res.cloudinary.com/dlioaagoi/image/upload/v1689712692/mukafat5_homgpc.svg"
+    }
+]

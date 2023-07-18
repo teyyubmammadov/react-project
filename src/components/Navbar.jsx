@@ -3,7 +3,7 @@ import Logo from '../assets/image/logo.svg'
 import Button from './Button'
 import {AiOutlineBars} from 'react-icons/ai'
 import {ImCross} from "react-icons/im";
-import './Navbar.css'
+// import './Navbar.css'
 
 
 
@@ -19,7 +19,7 @@ const Navbar = () => {
   }
   
   const removeNavbar = () => {
-    overlayDivi.current.classList.add('navbar-exit')
+    overlayDivi.current.classList.remove('navbar-open')
   }
 
 
@@ -41,13 +41,13 @@ const Navbar = () => {
 
     <nav className="navbar navbar-expand-lg wrapper">
     <div className="container-fluid">
-      <a className="navbar-brand" href="#">
+      <a className='navbar-brand' href="#">
         <img src={Logo} alt="" />
       </a>
-      <button onClick={overlayiAc} ref={navbarButonu}  className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button onClick={overlayiAc}n  className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <AiOutlineBars />
       </button>
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <div className="collapse navbar-collapse ps-4" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
             <a className="nav-link text-white" href="#">Home</a>
