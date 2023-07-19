@@ -3,7 +3,8 @@ import Logo from '../assets/image/logo.svg'
 import Button from './Button'
 import {AiOutlineBars} from 'react-icons/ai'
 import {ImCross} from "react-icons/im";
-// import './Navbar.css'
+
+import { Link } from 'react-router-dom';
 
 
 
@@ -50,10 +51,10 @@ const Navbar = () => {
       <div className="collapse navbar-collapse ps-4" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <a className="nav-link text-white" href="#">Home</a>
+            <Link className="nav-link text-white" to="/">Home</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-white" href="#">About</a>
+            <Link className="nav-link text-white" to="Partnyor-companies">Partnyor Companies</Link>
           </li>
           <li className="nav-item">
             <a className="nav-link text-white" href="#">Services</a>

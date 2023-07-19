@@ -10,6 +10,12 @@ import PartnyorCompanies from './components/PartnyorCompanies'
 import ApplySection from './components/ApplySection'
 import Mukafatlar from './components/Mukafatlar'
 
+// react router dom
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import Home from './pages/Home'
+import PartnyorCompanis from './pages/PartnyorCompanis'
+import NotFound from './pages/NotFound'
+
 
 
 function App() {
@@ -17,12 +23,20 @@ function App() {
 
   return (
     <>
+    <BrowserRouter>
+     <Navbar />
+     
       
-      <Navbar />
-      <Introduction />
-      <PartnyorCompanies/>
-      <ApplySection />
-      <Mukafatlar/>
+        <Routes>
+
+           <Route path='/' element={<Home/>} /> 
+           <Route path='Partnyor-companies' element={<PartnyorCompanis/>} />
+           <Route path='*' element={<NotFound/>} />
+      
+
+        </Routes>
+
+      </BrowserRouter>
     </>
   )
 }
