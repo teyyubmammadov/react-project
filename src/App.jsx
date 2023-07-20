@@ -15,6 +15,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Home from './pages/Home'
 import PartnyorCompanis from './pages/PartnyorCompanis'
 import NotFound from './pages/NotFound'
+import Contact from './pages/Contact'
 
 
 
@@ -32,6 +33,7 @@ function App() {
            <Route path='/' element={<Home/>} /> 
            <Route path='Partnyor-companies' element={<PartnyorCompanis/>} />
            <Route path='*' element={<NotFound/>} />
+           <Route path='Contact' element={<Contact/>} />
       
 
         </Routes>

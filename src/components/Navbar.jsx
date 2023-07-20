@@ -1,9 +1,13 @@
+// funksiya click isini yerine yetirir
 import React, {useRef} from 'react'
 import Logo from '../assets/image/logo.svg'
 import Button from './Button'
+
+// react iconslardan goturuldu ve adinin bas herifine uygun yaradisin tapib qeyd edrik
 import {AiOutlineBars} from 'react-icons/ai'
 import {ImCross} from "react-icons/im";
 
+// a teqlerine marsrut sistemini qurasdirdiqda React router Dom-un Link teqini istf edrik
 import { Link } from 'react-router-dom';
 
 
@@ -42,9 +46,9 @@ const Navbar = () => {
 
     <nav className="navbar navbar-expand-lg wrapper">
     <div className="container-fluid">
-      <a className='navbar-brand' href="#">
+      <Link className='navbar-brand' to="/">
         <img src={Logo} alt="" />
-      </a>
+      </Link>
       <button onClick={overlayiAc}n  className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <AiOutlineBars />
       </button>
@@ -54,7 +58,7 @@ const Navbar = () => {
             <Link className="nav-link text-white" to="/">Home</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link text-white" to="Partnyor-companies">Partnyor Companies</Link>
+            <Link className="nav-link text-white" to="Partnyor-companies">Companies</Link>
           </li>
           <li className="nav-item">
             <a className="nav-link text-white" href="#">Services</a>
@@ -63,10 +67,11 @@ const Navbar = () => {
             <a className="nav-link text-white" href="#">Blog</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-white" href="#">Contact</a>
+            <Link className="nav-link text-white" to="Contact">Contact</Link>
           </li>
         </ul>
-        <Button icindekiYazi='Sign in' klassAdi='btn btn-primary' />
+        <Button icindekiYazi='Sign up' klassAdi='btn btn-primary ' />
+        <Button icindekiYazi='Sign in' klassAdi='btn btn-primary ms-4' />
       </div>
     </div>
   </nav>
