@@ -49,11 +49,11 @@ const Navbar = () => {
       <Link className='navbar-brand' to="/">
         <img src={Logo} alt="" />
       </Link>
-      <button onClick={overlayiAc}n  className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button onClick={overlayiAc} className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <AiOutlineBars />
       </button>
       <div className="collapse navbar-collapse ps-4" id="navbarSupportedContent">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul className=" ms-auto me-auto navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
             <Link className="nav-link text-white" to="/">Home</Link>
           </li>

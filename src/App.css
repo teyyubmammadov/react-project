@@ -68,7 +68,7 @@ nav{
   background-color: var(--btn-color);
 }
 .introduction {
-  background-color: var(--main-color2);
+  background-color:var(--main-color2);
   padding-left: 60px;
   padding-right: 30px;
   padding-top: 10px;
